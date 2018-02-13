@@ -1,9 +1,11 @@
+import javax.swing.JOptionPane;
+
 public class TestaBanco {
 	public static void main(String[] args) {
 		Cliente paulo = new Cliente();
-		paulo.setNome("Paulo Silveira_Janeiro2018 ");
+		paulo.setNome( JOptionPane.showInputDialog(" Digita Nome: ") );
 		paulo.setCpf("222.222.222.-22");
-		paulo.setProfissao("programador");
+		paulo.setProfissao("_Programador");
 
 		Conta contaDoPaulo = new Conta(6646,969060);
 		contaDoPaulo.deposita(100);
