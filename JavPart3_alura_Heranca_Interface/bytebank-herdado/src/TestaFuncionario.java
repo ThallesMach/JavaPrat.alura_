@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class TestaFuncionario {
 
@@ -5,7 +6,8 @@ public class TestaFuncionario {
 
 
 		Funcionario nico = new Funcionario();
-		nico.setNome(" Nico Steppat ");
+		nico.setNome( JOptionPane.showInputDialog(" Digita Nome" ) );
+//		nico.setNome(" Nico Steppat ");
 		nico.setCpf(" 123456789-11");
 		nico.setSalario(2600.00);
 		
