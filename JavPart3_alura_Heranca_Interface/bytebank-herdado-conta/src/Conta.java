@@ -1,6 +1,8 @@
-public class Conta {
 
-	private double saldo;
+//
+public abstract class Conta {
+
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -20,10 +22,12 @@ public class Conta {
 		this.saldo = 100;
 		System.out.println("Estou criando uma conta " + this.numero);
 	}
-
-	public void deposita(double valor) {
-		this.saldo = this.saldo + valor;
-	}
+	
+	// metodo sem Corpo, Não há impplementação.
+	public abstract void deposita(double valor);
+//	public void deposita(double valor) {
+//		this.saldo = this.saldo + valor;
+//	}
 
 	public boolean saca(double valor) {
 		if (this.saldo >= valor) {
