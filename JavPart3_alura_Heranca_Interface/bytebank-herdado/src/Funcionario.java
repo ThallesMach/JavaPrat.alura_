@@ -1,15 +1,16 @@
 
-public class Funcionario {
+
+ // _Não pode instância dessa Class Porq ela é Abstata
+ // --->>> abstract  <<-----
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
 	private double salario;
 //	protected double salario;
 	
-	
-	public double getBonificacao(){
-		return this.salario * 0.5;
-	}
+// metodo sem Corpo, Não há impplementação.
+	public abstract double getBonificacao();
 	
 	
 	
